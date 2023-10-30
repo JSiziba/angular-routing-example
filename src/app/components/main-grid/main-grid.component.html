@@ -1,0 +1,51 @@
+<div class="h-[95vh] w-screen flex flex-col px-5 py-2">
+  <div *ngIf="currentOption == 'option-1'" class="h-full w-full flex flex-col gap-2">
+     <div class="h-1/2">
+       <app-time-series></app-time-series>
+     </div>
+     <div class="h-1/2">
+       <app-entities></app-entities>
+     </div>
+  </div>
+  <div *ngIf="currentOption === 'option-2'" class="h-full w-full flex flex-col gap-2">
+    <div class="h-1/2">
+      <app-time-series></app-time-series>
+    </div>
+    <div class="h-1/2">
+      <app-results></app-results>
+    </div>
+  </div>
+  <div *ngIf="currentOption === 'option-3'" class="h-full w-full flex flex-col gap-2">
+    <div class="h-1/2">
+      <app-entities></app-entities>
+    </div>
+    <div class="h-1/2">
+      <app-results></app-results>
+    </div>
+  </div>
+  <div *ngIf="currentOption === 'option-4'" class="h-full w-full flex gap-2">
+    <div class="w-1/2 h-full flex flex-col gap-2">
+      <div class="h-1/2 w-full">
+        <app-time-series></app-time-series>
+      </div>
+      <div class="h-1/2 w-full">
+        <app-entities></app-entities>
+      </div>
+    </div>
+    <div class="w-1/2 h-full">
+      <app-results></app-results>
+    </div>
+  </div>
+  <div *ngIf="currentOption === 'option-5'" class="h-full w-full">
+    <app-time-series></app-time-series>
+  </div>
+  <div *ngIf="currentOption === 'option-6'" class="h-full w-full">
+    <app-entities></app-entities>
+  </div>
+  <div *ngIf="currentOption === 'option-7'" class="h-full w-full">
+    <app-relationships></app-relationships>
+  </div>
+  <div *ngIf="currentOption === 'option-8'" class="h-full w-full">
+    <app-results></app-results>
+  </div>
+</div>
